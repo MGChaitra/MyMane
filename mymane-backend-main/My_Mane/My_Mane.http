@@ -1,0 +1,6 @@
+@My_Mane_HostAddress = http://localhost:5181
+
+GET {{My_Mane_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

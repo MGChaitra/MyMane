@@ -24,6 +24,8 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("DefaultConnection"))));
 
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+builder.Services.AddScoped<EmailService>();
+
 builder.Services.AddMemoryCache();
 builder.Services.AddScoped<WhatsAppService>();
 var app = builder.Build();

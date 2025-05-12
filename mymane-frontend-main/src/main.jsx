@@ -13,7 +13,7 @@ import Signup from './components/Signup/Signup.jsx'
 import Postproperty from './components/Postproperty/Postproperty.jsx'
 import Blog from './components/Blog/Blog.jsx'
 import Appnew from "./components/AppNew/Appnew.jsx";
-
+import MapViewer from './components/MapViewer/MapViewer.jsx'
 // const router = createBrowserRouter([
 //   {
 //     path: '/',
@@ -46,6 +46,7 @@ const router = createBrowserRouter(
       <Route path='postproperty' element={<Postproperty/>}/>
       <Route path='blog' element={<Blog/>}/>
       <Route path="appnew" element={<Appnew />} />
+      <Route path="mapviewr" element={<MapViewer/>}/>
     </Route>
     <Route path='login' element={<Login/>}/>
     <Route path='signup' element={<Signup/>}/>

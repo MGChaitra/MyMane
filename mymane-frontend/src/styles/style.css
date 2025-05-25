@@ -1,0 +1,168 @@
+/* Header layout */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+  background-color: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Left: Logo */
+.logo-container {
+  flex: 1;
+}
+
+.logo-img {
+  height: 40px;
+}
+
+/* Center: Nav links */
+.nav-links {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.nav-links a {
+  font-weight: 500;
+  color: #1f2937;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #f97316;
+}
+
+/* Right: Button + icon */
+.right-actions {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+
+.post-btn {
+  background-color: #f97316;
+  color: white;
+  padding: 0.5rem 1.25rem;
+  border: none;
+  border-radius: 9999px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.post-btn:hover {
+  background-color: #ea580c;
+}
+
+.profile-icon {
+  width: 32px;
+  height: 32px;
+  border: 2px solid #1f2937;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  background-color: white;
+}
+
+/* Hover effect */
+.profile-icon:hover {
+  background-color: #f3f4f6; /* light gray background */
+  transform: scale(1.05);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Active (click) effect */
+.profile-icon:active {
+  background-color: #e5e7eb; /* darker gray when clicked */
+  transform: scale(0.97);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* Optional focus style for accessibility */
+.profile-icon:focus {
+  outline: 2px solid #f97316;
+  outline-offset: 2px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  font-size: 20px;
+  color: #1f2937;
+}
+
+
+.hero {
+  position: relative;
+  height: 85vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  color: white;
+  max-width: 960px;
+  padding: 2rem;
+}
+
+.hero h1 {
+  font-size: 2.75rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-form {
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero-form input,
+.hero-form select {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 0.375rem;
+  width: 150px;
+}
+
+.hero-form button {
+  background-color: #f97316;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+}
+
+.hero-form button:hover {
+  background-color: #ea580c;
+}

@@ -22,12 +22,11 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"),
     ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("DefaultConnection"))));
-
+builder.Services.AddHttpClient<IOtpService, OtpService>();
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 builder.Services.AddScoped<EmailService>();
 
 builder.Services.AddMemoryCache();
-builder.Services.AddScoped<WhatsAppService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
